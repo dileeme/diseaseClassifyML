@@ -15,7 +15,7 @@ uploaded = files.upload()
 train_data = pd.read_csv('training.csv')
 test_data = pd.read_csv('testing.csv')
 
-# Step 2: Data Preprocessing //////
+# Step 2: Data Preprocessing 
 
 # Encoding the target variable
 
@@ -54,6 +54,7 @@ return label_encoder.inverse_transform(prediction)[0]
 
 # Example usage
 
+# Example Usage can be tested by pulling into a Jupyter Notebook or a Google Colab server. 
 sample_input = X_test.iloc[0].values  # Taking a sample test case
 predicted_disease = predict_disease(sample_input)
 print(f'Predicted Disease: {predicted_disease}')
