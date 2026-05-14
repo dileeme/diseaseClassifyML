@@ -10,7 +10,7 @@ from sklearn.metrics import accuracy_score, classification_report
 from google.colab import files
 uploaded = files.upload()
 
-# Load training and testing datasets
+
 
 train_data = pd.read_csv('training.csv')
 test_data = pd.read_csv('testing.csv')
