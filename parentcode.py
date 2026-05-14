@@ -14,14 +14,10 @@ label_encoder = LabelEncoder()
 train_data['prognosis'] = label_encoder.fit_transform(train_data['prognosis'])
 test_data['prognosis'] = label_encoder.transform(test_data['prognosis'])
 
-# Splitting data into features and labels
-
 X_train = train_data.drop('prognosis', axis=1)
 y_train = train_data['prognosis']
 X_test = test_data.drop('prognosis', axis=1)
 y_test = test_data['prognosis']
-
-# Step 3: Train the model
 
 model = SVC()
 model.fit(X_train, y_train)
