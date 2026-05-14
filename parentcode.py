@@ -5,7 +5,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, classification_report
 
-# Step 1: Load the dataset
+
 
 from google.colab import files
 uploaded = files.upload()
