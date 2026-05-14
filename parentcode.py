@@ -4,20 +4,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, classification_report
-
-
-
 from google.colab import files
 uploaded = files.upload()
 
-
-
 train_data = pd.read_csv('training.csv')
 test_data = pd.read_csv('testing.csv')
-
-
-
-
 
 label_encoder = LabelEncoder()
 train_data['prognosis'] = label_encoder.fit_transform(train_data['prognosis'])
