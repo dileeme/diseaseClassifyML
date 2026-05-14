@@ -17,7 +17,7 @@ test_data = pd.read_csv('testing.csv')
 
 
 
-# Encoding the target variable
+
 
 label_encoder = LabelEncoder()
 train_data['prognosis'] = label_encoder.fit_transform(train_data['prognosis'])
